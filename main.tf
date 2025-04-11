@@ -117,7 +117,7 @@ resource "aws_eks_node_group" "devopsshack" {
 }
 
 resource "aws_iam_role" "patelvandan4_cluster_roll" {
-  name = "devopsshack-cluster-role"
+  name = "patelvandan4_cluster_roll"
 
   assume_role_policy = <<EOF
 {
@@ -141,7 +141,7 @@ resource "aws_iam_role_policy_attachment" "devopsshack_cluster_role_policy" {
 }
 
 resource "aws_iam_role" "patelvandan4_node_group_roll" {
-  name = "devopsshack-node-group-role"
+  name = "patelvandan4_node_group_roll"
 
   assume_role_policy = <<EOF
 {
