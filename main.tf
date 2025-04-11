@@ -116,7 +116,7 @@ resource "aws_eks_node_group" "patelvandan4" {
   }
 }
 
-resource "aws_iam_role" "patelvandan4_cluster" {
+resource "aws_iamrole" "patelvandan4_cluster" {
   name = "patelvandan4_cluster"
 
   assume_role_policy = <<EOF
@@ -140,7 +140,7 @@ resource "aws_iam_role_policy_attachment" "patelvandan4_cluster_role_policy" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
 }
 
-resource "aws_iam_role" "patelvandan4_nodegrouprole" {
+resource "aws_iamrole" "patelvandan4_nodegrouprole" {
   name = "patelvandan4_nodegrouprole"
 
   assume_role_policy = <<EOF
